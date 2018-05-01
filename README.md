@@ -1,4 +1,3 @@
-
 # Fuel-Calculator
 In
 ## Getting Started
@@ -23,6 +22,10 @@ $  sudo apt-get install python-serial
 Then install pyexcel
 ```
 $  pip install pyexcel
+```
+And finally install the Python GPIO library
+```
+$  sudo apt-get install python-rpi.gpio
 ```
 ## Installing
 Pair the Bluetooth device to the Raspberry Pi
