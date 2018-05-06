@@ -1,5 +1,5 @@
 ## Vehicle System Data
-Today's vehicles have a variety of modules that regulate everything from fuel delivery and ignition timing to Windshield wiper speed and air conditioning controls. One such modules, the Electronic Control Unit (ECU), receives information from a variety of sensors and uses the information to control engine performance. Abnormalities in engine performance are stored as trouble codes. Beginning in 1996 all vehicles produced in North America are required to be equipped with an Onboard Diagnostics II (OBDII) that uses one communication protocol and connector for universal access. Diagnostic tools to access stored trouble codes have become more accessable to the average do-it-yourselfer, but tools to read live data remain more costly than the average person is willing to invest. This project utilizes a J9141-2 compatible ELM327 OBDII Bluetooth adapter paired with a Bluetooth capable Raspberry Pi to access and record fuel and emission system data.
+Today's vehicles have a variety of modules that regulate everything from fuel delivery and ignition timing to windshield wiper speed and air conditioning controls. One such module, the Electronic Control Unit (ECU), receives information from a variety of sensors and uses the information to control engine performance. Abnormalities in engine performance are stored as trouble codes. Beginning in 1996 all vehicles produced in North America are required to be equipped with an Onboard Diagnostics II (OBDII) that uses one communication protocol and connector for universal access. Diagnostic tools to access stored trouble codes have become more accessable to the average do-it-yourselfer, but tools to read live data remain more costly than the average person is willing to invest. This project utilizes a J9141-2 compatible ELM327 OBDII Bluetooth adapter paired with a Bluetooth capable Raspberry Pi to access and record fuel and emission system data.
 
 Sensors logged by this program: Vehicle Run Time, MPH, RPM, Engine Temperature(F), Manifold Absolute Pressure(MAP), Mass Air Flow(MAF), Intake Air Temperature (F), Throttle Position(%), Engine Load(%), Fuel Pressure, Short Term Fuel Trim Bank 1, Long Term Fuel Trim Bank 1, Short Term Fuel Trim Bank 2, Long Term Fuel Trim Bank 2, Fuel System Status, Oxygen Sensor Voltage (Banks 1-8), Oxygen Sensor Fuel Trim (Banks 1-8)
 
@@ -78,7 +78,7 @@ Program Execution:
 ![Execute.PNG](https://github.com/AngFletcher/Vehicle-System-Data/blob/master/Execute.PNG)
 
 
-General Data:
+General Data:     
 ![GeneralData.PNG](https://github.com/AngFletcher/Vehicle-System-Data/blob/master/GeneralData.PNG)
 
 Fuel System Data:
@@ -91,8 +91,6 @@ Lambda Data:
 This program can be adapted for headless deployment only on vehicles that support VIN decode and only after the initial setup has been completed. If the vehicle does not support VIN decode the user will be promped to enter the vehicle make and model each time the program is started for logging purposes. 
 ## Authors
 •	Angeline Fletcher - Initial work
-## License
--
 ## Acknowledgments
 •	The program utilizes the following libraries:
 
