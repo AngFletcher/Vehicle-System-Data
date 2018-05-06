@@ -1,7 +1,9 @@
 # Vehicle System Data
 Today's vehicles have a variety of modules that regulate everything from fuel delivery and ignition timing to Windshield wiper speed and air conditioning controls. One such modules, the Electronic Control Unit (ECU), receives information from a variety of sensors and uses the information to control engine performance. Abnormalities in engine performance are stored as trouble codes. Beginning in 1996 all vehicles produced in North America are required to be equipped with an Onboard Diagnostics II (OBDII) that uses one communication protocol and connector for universal access. Diagnostic tools to access stored trouble codes have become more accessable to the average do-it-yourselfer, but tools to read live data remain more costly than the average person is willing to invest. This project utilizes a J9141-2 compatible ELM327 OBDII Bluetooth adapter paired with a Bluetooth capable Raspberry Pi to access and record fuel and emission system data.
+
 Sensors logged: Vehicle Run Time, MPH, RPM, Engine Temperature(F), Manifold Absolute Pressure(MAP), Mass Air Flow(MAF), Intake Air Temperature (F), Throttle Position(%), Engine Load(%), Fuel Pressure, Short Term Fuel Trim Bank 1, Long Term Fuel Trim Bank 1, Short Term Fuel Trim Bank 2, Long Term Fuel Trim Bank 2, Fuel System Status, Oxygen Sensor Voltage (Banks 1-8), Oxygen Sensor Fuel Trim (Banks 1-8)
-****Note - Not all vehicles will support all sensors****
+
+****Note - Not all vehicles support all sensors****
 ## Hardware Required
    1. Raspberry pi with wifi and bluetooth
    2. J9141-2 compatible ELM327 Bluetooth adapter
@@ -51,6 +53,8 @@ $  sudo nano /etc/rc.local
 ```
   Enter the commands from option 1 before the exit line, save the file and reboot the system.
 ## Initial Setup
+The first time a program is executed on a new vehicle the program will obtain data from the user.
+
 
 ## Running the tests
 "Explain how to run the automated tests for this system
