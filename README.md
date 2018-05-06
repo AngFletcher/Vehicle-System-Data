@@ -1,10 +1,10 @@
 # Vehicle System Data
-In
-## Getting Started
-"These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system."
+Today's vehicles have a variety of modules that regulate everything from fuel delivery and ignition timing to Windshield wiper speed and air conditioning controls. One such modules, the Electronic Control Unit (ECU), receives information from a variety of sensors and uses the information to control engine performance. Abnormalities in engine performance are stored as trouble codes. Beginning in 1996 all vehicles produced in North America are required to be equipped with an Onboard Diagnostics II (OBDII) that uses one communication protocol and connector for universal access. Diagnostic tools to access stored trouble codes have become more accessable to the average do-it-yourselfer, but tools to read live data remain more costly than the average person is willing to invest. This project utilizes a J9141-2 compatible ELM327 OBDII Bluetooth adapter paired with a Bluetooth capable Raspberry Pi to access and record fuel and emission system data.
+Sensors logged: Vehicle Run Time, MPH, RPM, Engine Temperature(F), Manifold Absolute Pressure(MAP), Mass Air Flow(MAF), Intake Air Temperature (F), Throttle Position(%), Engine Load(%), Fuel Pressure, Short Term Fuel Trim Bank 1, Long Term Fuel Trim Bank 1, Short Term Fuel Trim Bank 2, Long Term Fuel Trim Bank 2, Fuel System Status, Oxygen Sensor Voltage (Banks 1-8), Oxygen Sensor Fuel Trim (Banks 1-8)
+****Note - Not all vehicles will support all sensors****
 ## Hardware Required
    1. Raspberry pi with wifi and bluetooth
-   2. ELM327 Bluetooth adapter
+   2. J9141-2 compatible ELM327 Bluetooth adapter
    3. Aftermarket head unit and keyboard or laptop with ethernet or vnc capability
    4. 3A power supply
 ## Prerequisites
@@ -23,10 +23,6 @@ Then install pyexcel
 ```
 $  pip install pyexcel
 ```
-And finally install the Python GPIO library
-```
-$  sudo apt-get install python-rpi.gpio
-```
 ## Installing
 Pair the Bluetooth device to the Raspberry Pi
 ```
@@ -42,7 +38,6 @@ Enter the pin # if prompted. Most commonly 0000, 1234, or 6789.
 #  connect <BT mac address>
 #  exit
 ```
-
 Bind the device to the port
  
   Option 1: Bind the device each time the system is booted
@@ -55,14 +50,8 @@ $  sudo rfcomm bind rfcomm0 <BT mac address>
 $  sudo nano /etc/rc.local
 ```
   Enter the commands from option 1 before the exit line, save the file and reboot the system.
+## Initial Setup
 
-
-"A step by step series of examples that tell you have to get a development env running
-Say what the step will be
-Give the example
-And repeat
-until finished
-End with an example of getting some data out of the system or using it for a little demo"
 ## Running the tests
 "Explain how to run the automated tests for this system
 Break down into end to end tests
@@ -72,18 +61,9 @@ And coding style tests
 Explain what these tests test and why
 Give an example"
 ## Deployment
-"Add additional notes about how to deploy this on a live system"
-## Built With
-"•	Dropwizard - The web framework used
-•	Maven - Dependency Management
-•	ROME - Used to generate RSS Feeds"
-## Contributing
--
-## Versioning
-We use SemVer for versioning. For the versions available, see the tags on this repository.
+This program can be adapted for headless deployment only on vehicles that support VIN decode and only after the initial setup has been completed. If the vehicle does not support VIN decode the user will be promped to enter the vehicle make and model each time the program is started for logging purposes. 
 ## Authors
 •	Angeline Fletcher - Initial work
-See also the list of contributors who participated in this project.
 ## License
 -
 ## Acknowledgments
