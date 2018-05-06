@@ -61,31 +61,31 @@ The program will present 1 of 2 options depending on the supported system in the
 
 Option 1:
 	The vehicle supports the protocol that relays VIN information.
-	![HondaInitScreen.PNG]({{site.baseurl}}/HondaInitScreen.PNG)
+	![HondaInitScreen.PNG](https://github.com/AngFletcher/Vehicle-System-Data/blob/master/HondaInitScreen.PNG)
 
 Option 2:
 	The vehicle does not support the VIN protocol
-	![]({{site.baseurl}}//JeepInitScreen1.PNG)
+	![](https://github.com/AngFletcher/Vehicle-System-Data/blob/master/JeepInitScreen1.PNG)
 
 Once Vehicle data is obtained the program will create a file labeled OBDii to hold vehicles and a vehicle specific file to store the data logged.
-![]({{site.baseurl}}//FileInit.PNG)
+![](https://github.com/AngFletcher/Vehicle-System-Data/blob/master/FileInit.PNG)
 
 The program can be ended at any time with a keyboard interrupt (ctrl-c).
 ## Deployment
 Once initial setup is complete the program will create an initFile.txt file and a .obs book which contains three spreadsheets - General Data, Fuel System Data, and Lambda Data where each sheet contains a snapshot of sensors at labeled intervals.
 
 Program Execution:
-![Execute.PNG]({{site.baseurl}}/Execute.PNG)
+![Execute.PNG](https://github.com/AngFletcher/Vehicle-System-Data/blob/master/Execute.PNG)
 
 
 General Data:
-![GeneralData.PNG]({{site.baseurl}}/GeneralData.PNG)
+![GeneralData.PNG](https://github.com/AngFletcher/Vehicle-System-Data/blob/master/GeneralData.PNG)
 
 Fuel System Data:
-![]({{site.baseurl}}//FuelData.PNG)
+![](https://github.com/AngFletcher/Vehicle-System-Data/blob/master/FuelData.PNG)
 
 Lambda Data:
-![]({{site.baseurl}}//LambdaData.PNG)
+![](https://github.com/AngFletcher/Vehicle-System-Data/blob/master/LambdaData.PNG)
 
 ## Adaptions
 This program can be adapted for headless deployment only on vehicles that support VIN decode and only after the initial setup has been completed. If the vehicle does not support VIN decode the user will be promped to enter the vehicle make and model each time the program is started for logging purposes. 
