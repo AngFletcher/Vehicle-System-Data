@@ -98,3 +98,16 @@ pyserial [https://pythonhosted.org/pyserial/](https://pythonhosted.org/pyserial/
     
 pyexcel [https://pypi.org/project/pyexcel/](https://pypi.org/project/pyexcel/)
 
+## Resources
+The following websites were used for reseach and inspiration:
+
+https://en.wikipedia.org/wiki/OBD-II_PIDs
+
+http://blog.brianhemeryck.me/how-to-interface-with-your-cars-ecu-through-obd2-and-python/
+
+http://www.lightner.net/lightner/bruce/Lightner-183.pdf
+
+https://x-engineer.org/automotive-engineering/internal-combustion-engines/performance/calculate-volumetric-efficiency/
+
+http://pyexcel.readthedocs.io/en/latest/index.html
+
