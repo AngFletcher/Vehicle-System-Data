@@ -107,7 +107,5 @@ http://blog.brianhemeryck.me/how-to-interface-with-your-cars-ecu-through-obd2-an
 
 http://www.lightner.net/lightner/bruce/Lightner-183.pdf
 
-https://x-engineer.org/automotive-engineering/internal-combustion-engines/performance/calculate-volumetric-efficiency/
-
 http://pyexcel.readthedocs.io/en/latest/index.html
 
